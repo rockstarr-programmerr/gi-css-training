@@ -1,0 +1,57 @@
+body {
+    background-color: #dcd9c6;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #1b1924;
+}
+
+code {
+    white-space: pre;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.main-title, .sub-title {
+    text-align: center;
+}
+
+.sub-title {
+    color: #3f3232;
+}
+
+.author p {
+    margin: 5px 50px 5px;
+    text-align: right;
+    font-style: italic;
+}
+
+.navigate-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#backward-btn {
+    color: #745935;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#forward-btn {
+    color: #745935;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#backward-btn:hover, #forward-btn:hover {
+    opacity: 0.6;
+}
+
+#css3-logo {
+    height: 300px;
+    display: block;
+    margin: 0 auto 30px auto;
+}

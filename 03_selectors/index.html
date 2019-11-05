@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 02</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">3. Selector</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+    </header>
+
+    <section>
+        <h3>Có 5 loại selector:</h3>
+        <ul>
+            <li>Simple selectors</li>
+            <li>Combinator selectors</li>
+            <li>Pseudo-class selectors</li>
+            <li>Pseudo-elements selectors</li>
+            <li>Attribute selectors</li>
+        </ul>
+
+        <h4>Simple selectors:</h4>
+        <p>Ví dụ: <code>h1</code>, <code>.this-class</code>, <code>#that-id</code>, v.v...</p>
+
+        <h4>Combinator selectors:</h4>
+        <ul>
+            <li>
+                <p>
+                    <b class="blue-bold">Descendant selector (dấu cách):</b> <br>
+                    Select tất cả các phần tử con, cháu, chắt, chít, v.v... <br>
+                    Ví dụ:
+                    <code>
+        section p {
+            background-color: yellow
+        }
+                    </code><br>
+                    -> Giả sử trong &lt;section&gt; có &lt;p&gt;, hoặc trong &lt;section&gt; có &lt;div&gt; rồi trong &lt;div&gt; đó mới có &lt;p&gt; <br>
+                    thì cả 2 trường hợp đó &lt;p&gt; đều nhận được thuộc tính <code style="background-color: yellow;">background-color: yellow</code>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b class="blue-bold">Child selector (&gt;):</b><br>
+                    Chỉ select các phần tử con <br>
+                    Ví dụ:
+                    <code>
+        nav &gt; img {
+            max-height: 100px;
+        }
+                    </code><br>
+                    -> Chỉ những &lt;img&gt; ngay dưới &lt;nav&gt; mới có <code>max-height: 100px</code>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b class="blue-bold">Adjacent sibling selector (+)</b><br>
+                    Select tất cả những phần tử anh em ở <b>ngay sau</b> phần tử hiện tại <br>
+                    Ví dụ: <br>
+                    - Html:
+                    <code>
+    &lt;div&gt;
+        &lt;p&gt;Paragraph 1&lt;/p&gt;
+        &lt;p&gt;Paragraph 2&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;p&gt;Paragraph 3&lt;/p&gt;
+    &lt;p&gt;Paragraph 4&lt;/p&gt;
+                    </code><br>
+                    - CSS:
+                    <code>
+    div + p {
+        background-color: orange;
+    }
+                    </code><br>
+                    -> Phần tử &lt;p&gt; có màu nền <span style="background-color: orange;">da cam</span> là: <span id="adjacent-sibling-selector-answer">Paragraph 3</span><button id="adjacent-sibling-selector-btn">Trả lời</button>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b class="blue-bold">General sibling selector (~):</b>
+                    Select tất cả những phần tử anh em ở <b>trước và sau</b> phần tử hiện tại <br>
+                    Ví dụ: <br>
+                    - Html:
+                    <code>
+    &lt;p&gt;Paragraph 1&lt;/p&gt;
+    &lt;div&gt;
+        &lt;p&gt;Paragraph 2&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;p&gt;Paragraph 3&lt;/p&gt;
+    &lt;p&gt;Paragraph 4&lt;/p&gt;
+
+    &lt;span&gt;Coding is fun&lt;/span&gt;
+    &lt;p&gt;Paragraph 5&lt;/p&gt;
+                    </code><br>
+                    - CSS:
+                    <code>
+    div ~ p {
+        background-color: pink;
+    }
+                    </code><br>
+                    -> Phần tử &lt;p&gt; có màu nền <span style="background-color: pink;">hồng</span> là: <span id="general-sibling-selector-answer">Paragraph 1, 3, 4</span><button id="general-sibling-selector-btn">Trả lời</button>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../02_link_css/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

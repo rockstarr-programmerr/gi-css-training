@@ -1,13 +1,30 @@
 body {
-    background-color: #dcd9c6;
+    background-color: #f4f3f4;
+}
+
+footer {
+    padding-bottom: 100px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    color: #1b1924;
+    color: #d50b53;
+}
+
+ul, ol, li {
+    color: #824ca7;
 }
 
 code {
+    color: #1b1924;
     white-space: pre;
+}
+
+code:hover {
+    cursor: text;
+}
+
+hr {
+    border: 0.5px solid #d50b53;
 }
 
 .container {
@@ -20,7 +37,7 @@ code {
 }
 
 .sub-title {
-    color: #3f3232;
+    color: #824ca7;
 }
 
 .author p {
@@ -54,4 +71,8 @@ code {
     height: 300px;
     display: block;
     margin: 0 auto 30px auto;
+}
+
+b[class="blue-bold"] {
+    color: #824ca7;
 }

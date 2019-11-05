@@ -1,0 +1,35 @@
+#demo-4-margin {
+    background-color: #b9c406;
+    margin: 10px 20px 30px 40px;
+}
+
+#demo-3-margin {
+    background-color: #a882c1;
+    margin: 10px 20px 40px;
+}
+
+#demo-2-margin {
+    background-color: #d50b53;
+    margin: 20px 40px;
+}
+
+#demo-1-margin {
+    background-color: #824ca7;
+    margin: 40px;
+}
+
+#demo-auto-margin {
+    background-color: #b9c406;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#top-div {
+    background-color: #a882c1;
+    margin-bottom: 20px;
+}
+
+#bottom-div {
+    background-color: #b9c406;
+    margin-top: 50px;
+}

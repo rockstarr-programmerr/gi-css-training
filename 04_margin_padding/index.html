@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 01</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">4. Margin, padding</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../03_selectors/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <h3>Margin</h3>
+        <div>
+            <h4>Đơn vị đo:</h4>
+            <p>
+                px, pt, cm, em, %, inherit <br>
+                auto: căn giữa
+            </p>
+
+            <h4>Ví dụ:</h4>
+            <p>
+                - Nếu có 4 số => trên, phải, dưới, trái
+                <code>
+    #stay-away {
+        margin: 10px 20px 30px 40px;
+    }
+                </code>
+            </p>
+            <p id="demo-4-margin">Demo</p>
+
+            <p>
+                - Nếu có 3 số => trên, phải trái, dưới
+                <code>
+    #stay-away {
+        margin: 10px 20px 40px;
+    }
+                </code>
+            </p>
+            <p id="demo-3-margin">Demo</p>
+
+            <p>
+                - Nếu có 2 số => trên dưới, trái phải
+                <code>
+    #stay-away {
+        margin: 20px 40px;
+    }
+                </code>
+            </p>
+            <p id="demo-2-margin">Demo</p>
+
+            <p>
+                - Nếu có 1 số => cả 4 phía
+                <code>
+    #stay-away {
+        margin: 40px;
+    }
+                </code>
+            </p>
+            <p id="demo-1-margin">Demo</p>
+
+            <p>
+                - Auto => Căn đều
+                <code>
+    #stay-away {
+        width: 100px;
+        margin: 0 auto;
+    }
+                </code>
+            </p>
+            <p id="demo-auto-margin">Demo</p>
+
+        </div>
+
+        <div>
+            <h4>Lưu ý: <b>margin collapse</b></h4>
+            <p>
+                Xảy ra khi 1 block element bên trên và 1 block element bên dưới đều được set margin-top, margin-bottom <br>
+                Khi đó, khoảng cách giữa 2 element sẽ trở thành khoảng margin nào lớn hơn (chứ không phải bằng 2 margin cộng lại) <br>
+            </p>
+            <p><u><i><b>Chỉ xảy ra theo chiều dọc!</b></i></u></p>
+            <code>
+    #top-div {
+        margin-bottom: 20px;
+    }
+
+    #bottom-div {
+        margin-top: 50px;
+    }
+            </code>
+
+            <div id="top-div">Demo</div>
+            <div id="bottom-div">Demo</div>
+        </div>
+
+        <hr>
+
+        <h3>Padding</h3>
+        <p>Tương tự margin</p>
+        <p>
+            <b><u><i>Khác biệt: </i></u></b>
+            <br>
+            Margin là khoảng cách giữa các element với nhau <br>
+            Padding là khoảng cách giữa border của element với content của nó
+        </p>
+
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

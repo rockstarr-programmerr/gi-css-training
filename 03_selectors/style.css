@@ -6,3 +6,11 @@ button:hover {
 #adjacent-sibling-selector-answer, #general-sibling-selector-answer {
     display: none;
 }
+
+#test-hover-btn:hover {
+    cursor: progress;
+}
+
+/* #add-smiley::after {
+    content: url(../images/smiley.png);
+} */

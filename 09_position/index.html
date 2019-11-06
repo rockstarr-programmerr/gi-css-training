@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 09</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">9. Position</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../08_display/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <h3>Các kiểu position</h3>
+        <ul>
+            <li>
+                <p><code>static</code>: mặc định, được tính là không "positioned"</p>
+            </li>
+            <li>
+                <p><code>relative</code>: tương đối với vị trí static của nó</p>
+            </li>
+            <li>
+                <p><code>absolute</code>: tương đối với element cha gần nhất <b>có position</b></p>
+            </li>
+            <li>
+                <p><code>fixed</code>: tương đối với viewport</p>
+            </li>
+            <li>
+                <p><code>sticky</code>: lúc đầu là static, nhưng khi người dùng scroll đến một vị trí nhất định thì thành fixed</p>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3>Ví dụ:</h3>
+        <h4>Relative với static</h4>
+        <div id="demo-1" class="demo color-1 small">Dịch tôi sang phải 50px</div>
+
+        <h4>Absolute với relative</h4>
+        <div class="demo color-2 big relative">
+            <div id="demo-2" class="demo color-1 small">Dịch tôi xuống dưới 100px</div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

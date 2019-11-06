@@ -1,0 +1,30 @@
+.demo {
+    text-align: center;
+    padding: 2px;
+}
+
+.color-1 {
+    background-color: hotpink;
+}
+
+.color-2 {
+    background-color: lawngreen;;
+}
+
+.big {
+    width: 300px;
+    height: 200px;
+}
+
+.small {
+    width: 100px;
+    height: 50px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}

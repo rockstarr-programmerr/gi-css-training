@@ -1,0 +1,15 @@
+.demo-flex-container {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    background-color: lemonchiffon;
+    border: 1px solid rgb(20, 2, 2);
+    text-align: center;
+}
+
+.demo-flex-container div {
+    line-height: 100px;
+    margin: 0 5px;
+    background-color: lightcoral;
+    border: 1px solid rgb(20, 2, 2);
+}

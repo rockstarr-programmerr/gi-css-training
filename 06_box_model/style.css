@@ -1,0 +1,31 @@
+#margin-div {
+    width: 500px;
+    height: 280px;
+    padding: 0 40px 40px;
+    background-color: #d50b53;
+}
+
+#border-div {
+    padding: 0 40px 40px;
+    background-color: #f4f3f4;
+}
+
+#padding-div {
+    padding: 0 40px 40px;
+    background-color: #824ca7;
+}
+
+#content-div {
+    height: 40px;
+    padding: 0 40px 40px;
+    background-color: #b9c406;
+}
+
+#margin-div p {
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px #666;
+}

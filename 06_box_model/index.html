@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 01</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">6. Box model</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../05_width_height/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <h3>Mô hình box của CSS bao gồm:</h3>
+        <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+        </ul>
+        <p>=> Phải cộng cả 4 số đo này khi muốn tính chiều rộng/cao thực tế của 1 element.</p>
+
+        <div id="margin-div">
+            <p>Margin</p>
+            <div id="border-div">
+                <p>Border</p>
+                <div id="padding-div">
+                    <p>Padding</p>
+                    <div id="content-div">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>    
+        <p><b><i>Tips!</i></b></p>
+        <ul>
+            <li><p>Mở cửa số F12 và chọn "computed" để xem box model của 1 element</p></li>
+        </ul>
+
+        <hr>
+        <h3>Câu hỏi:</h3>
+        <p>
+            Div dưới đây có chiều rộng, chiều cao là bao nhiêu? <br>
+            <code>
+    div {
+        width: 300px;
+        height: 50px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+    }</code>
+        </p>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,5 +1,6 @@
 body {
     background-color: #f4f3f4;
+    letter-spacing: 0.7px;
 }
 
 footer {
@@ -24,12 +25,15 @@ code:hover {
 }
 
 hr {
-    border: 0.5px solid #d50b53;
+    border: 1px solid #dcd9c6;
 }
 
 .container {
     width: 800px;
     margin: auto;
+    padding: 0 23px;
+    border-left: 2px solid #dcd9c6;
+    border-right: 2px solid #dcd9c6;
 }
 
 .main-title, .sub-title {

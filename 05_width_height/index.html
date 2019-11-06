@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 01</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">5. Width, height</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../04_margin_padding/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <h3>Áp dụng cho loại element nào?</h3>
+        <p>
+            Chỉ có tác dụng với <b>block-element</b>, không có tác dụng với <b>inline-element</b><br>
+            (block-element là <code>div, section, h1 -> 6, form, table, ul, li, v.v...</code><br>
+            inline-element là <code>span, a, button, input, label, textarea, img, video, v.v...</code>)
+        </p>
+
+        <p>
+            Ví dụ: <br>
+            Cả 2 element dưới đây đều có <code>width: 500px, height: 100px</code> nhưng 1 là <code>span</code>, 1 là <code>div</code>
+            <br><br>
+            <span class="demo-box-1">SPAN</span>
+            <div class="demo-box-1">DIV</div>
+        </p>
+
+        <hr>
+
+        <h3>Đơn vị tính:</h3>
+        <ul>
+            <li><code>px, pt, em, %, cm, v.v...</code></li>
+            <li><code>auto</code></li>
+            <li><code>initial</code></li>
+            <li><code>inherit</code></li>
+        </ul>
+
+        <hr>
+
+        <h3>Width và max-width / height và max-height?</h3>
+        <ul>
+            <li>
+                <p>
+                    Nếu set <code>width</code>, element sẽ luôn chiếm một chiều rộng cố định kể cả khi <br>
+                    vượt quá chiều rộng của element cha
+                </p>
+            </li>
+            <li>
+                <p>
+                    Nếu set <code>max-width</code>, element sẽ chiếm chiều rộng <b>tối đa</b> bằng con số đã set, <br>
+                    nhưng nếu element cha nhỏ hơn thì element cũng nhỏ theo
+                </p>
+            </li>
+        </ul>
+        <p>2 div dưới đây, cái nào có <code>width</code>, cái nào có <code>max-width</code>?</p>
+        <div class="demo-max-width"></div>
+        <br>
+        <div class="demo-width"></div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

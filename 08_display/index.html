@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 08</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">8. Display</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../07_text/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <h3>Block</h3>
+        <ul>
+            <li>
+                <p>Block element luôn xuống dòng</p>
+            </li>
+            <li>
+                <p>Block element chiếm <b>tối đa chiều rộng</b><br></p>
+            </li>
+            <li>
+                <p>Có thể set <code>margin, padding, width, height</code></p>
+            </li>
+            <li>
+                <p>Một số block element: <code>h1, h2, h3,..., div, p, form, table, header, footer, v.v...</code></p>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3>Inline</h3>
+        <ul>
+            <li>
+                <p>Inline element khi được lồng trong block element, sẽ không xuống dòng</p>
+            </li>
+            <li>
+                <p>Inline element chỉ chiếm <b>chiều rộng cần thiết</b> để hiển thị nội dung của nó</p>
+            </li>
+            <li>
+                <p>Không thể set <code>top/bottom-margin/padding, width, height</code></p>
+            </li>
+            <li>
+                <p>Một số inline element: <code>span, a, img, input, button, v.v...</code></p>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3>Inline-block</h3>
+        <ul>
+            <li>
+                <p>Inline-block element cũng không xuống dòng</p>
+            </li>
+            <li>
+                <p>Inline-block element chỉ chiếm <b>chiều rộng cần thiết</b> để hiển thị nội dung</p>
+            </li>
+            <li>
+                <p><b>Đặc biệt:</b> inline-block element <b>có thể</b> set <code>top/bottom-margin/padding, width, height</code></p>
+            </li>
+        </ul>
+
+        <hr>
+
+        <p>Có thể dùng thuộc tính <code>display</code> để biến 1 element loại này thành loại khác</p>
+        <p>
+            Ví dụ: <br>
+            Element dưới đây là span nhưng được hiển thị như block:
+        </p>
+        <code>
+    #demo-span {
+        background-color: goldenrod;
+        display: block;
+        width: 300px;
+        height: 100px;
+        margin: 20px;
+        padding: 30px;
+    }
+        </code>
+        <span id="demo-span">
+            I have width, height, margin and padding!
+        </span>
+
+        <hr>
+
+        <h3>Display none</h3>
+        <ul>
+            <li>
+                <p>Xóa hẳn element đó trên DOM</p>
+            </li>
+            <li>
+                <p>Khác với <code>visibility: hidden</code></p>
+            </li>
+        </ul>
+        <p>Ví dụ:</p>
+        <div class="flex-container">
+            <div id="display-none">
+                <p><code>display: none</code></p>
+            </div>
+            <div id="visibility-hidden">
+                <p><code>visibility: hidden</code></p>
+            </div>
+            <div id="reset">
+                <p><code>Reset!</code></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

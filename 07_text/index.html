@@ -13,18 +13,19 @@
 <body class="container">
     <header>
         <h1 class="main-title">Gisoft - CSS fresher training</h1>
-        <h2 class="sub-title">7. Text styling</h2>
+        <h2 class="sub-title">7. Text, font</h2>
         <div class="author">
             <p>Dương Trung</p>
             <p>- 31/10/2019 -</p>
         </div>
         <div class="navigate-btn">
             <a id="backward-btn" href="../06_box_model/index.html"><i class="fas fa-backward"></i></a>
-            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+            <a id="forward-btn" href="../08_display/index.html"><i class="fas fa-forward"></i></a>
         </div>
     </header>
 
     <section>
+        <h3>1. Text:</h3>
         <ul>
             <li>text-align: <code>center, left, right, justify</code></li>
             <li>text-indent</li>
@@ -38,7 +39,7 @@
 
         <hr>
 
-        <h3>Ví dụ:</h3>
+        <h4>Ví dụ:</h4>
         <div>
             <code>    p {
         text-align: center;
@@ -83,6 +84,60 @@
             </p>
         </div>
         <hr>
+    </section>
+
+    <section>
+        <h3>2. Font:</h3>
+        <p>
+            Có 2 loại:
+            <ul>
+                <li>Generic family</li>
+                <li>Font family</li>
+            </ul>
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Generic family là các loại font chung, bao gồm: <br>
+                    - Serif: <span style="font-family: serif;">Có gạch nhỏ ở các điểm cuối của mỗi chữ</span><br>
+                    - Sans-serif: <span style="font-family: sans-serif;">Không có gạch nhỏ ở các điểm cuối của mỗi chữ</span><br>
+                    - Monospace: <span style="font-family: monospace;">Bề rộng của các chữ đều bằng nhau</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Font family nếu muốn dùng phải import: <br>
+                    - Html: <br>
+                    <code>
+    &lt;link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"&gt;
+                    </code><br>
+                    - CSS: <br>
+                    <code>
+    font-family: 'Roboto', sans-serif;
+                    </code><br>
+                    - Hoặc: <br>
+                    <code>
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+                    </code>
+                </p>
+            </li>
+        </ul>
+
+        <p>
+            <b><i>Tips!</i></b>
+            <ul>
+                <li>Tìm font ở một số trang như: <a href="https://fonts.google.com/" target="blank">https://fonts.google.com/</a></li>
+                <li>
+                    Nên set nhiều font để nếu browser không load được font này thì sẽ thử load font tiếp theo <br>
+                    VD: <br>
+                    <code>
+    font-family: "Times New Roman", Times, serif;
+                    </code><br>
+                    Nếu không load được "Times New Roman" thì sẽ thử load Times, <br>
+                    nếu không được nữa thì sẽ load serif - đây là font generic nên không thể lỗi
+                </li>
+            </ul>
+        </p>
     </section>
 
     <footer>

@@ -1,0 +1,26 @@
+#demo-span {
+    background-color: goldenrod;
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-container > div {
+    width: 200px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #571d1d;
+    cursor: pointer;
+}
+
+.flex-container code {
+    cursor: pointer;
+}

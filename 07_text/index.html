@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIS - CSS training - 07</title>
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="main-title">Gisoft - CSS fresher training</h1>
+        <h2 class="sub-title">7. Text styling</h2>
+        <div class="author">
+            <p>Dương Trung</p>
+            <p>- 31/10/2019 -</p>
+        </div>
+        <div class="navigate-btn">
+            <a id="backward-btn" href="../06_box_model/index.html"><i class="fas fa-backward"></i></a>
+            <a id="forward-btn" href="#"><i class="fas fa-forward"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <ul>
+            <li>text-align: <code>center, left, right, justify</code></li>
+            <li>text-indent</li>
+            <li>letter-spacing</li>
+            <li>word-spacing</li>
+            <li>line-height</li>
+            <li>text-shadow</li>
+            <li>white-space: <code>nowrap, normal, pre</code></li>
+            <li>text-overflow: <code>clip, ellipsis</code></li>
+        </ul>
+
+        <hr>
+
+        <h3>Ví dụ:</h3>
+        <div>
+            <code>    p {
+        text-align: center;
+        text-shadow: 1px 1px #555;
+    }
+            </code>
+            <p class="demo-p" style="text-align: center;">Center text</p>
+        </div>
+        <hr>
+        <div>
+            <code>    p {
+        text-align: justify;
+        text-indent: 50px;
+    }
+            </code>
+            <p class="demo-p" style="text-indent: 50px; text-align: justify;">
+                Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến văn bản giống thật hơn, bình thường hơn.
+            </p>
+        </div>
+        <hr>
+        <div>
+            <code>    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;            
+    }
+            </code>
+            <p class="demo-p" style="width: 100px; white-space: nowrap; overflow: hidden; text-overflow: clip;">
+                Dễ đọc và rõ nghĩa dễ gây rối trí
+            </p>
+        </div>
+        <hr>
+        <div>
+            <code>    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;            
+    }
+            </code>
+            <p class="demo-p" style="width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                Dễ đọc và rõ nghĩa dễ gây rối trí
+            </p>
+        </div>
+        <hr>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
